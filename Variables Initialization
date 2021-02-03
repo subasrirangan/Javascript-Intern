@@ -1,0 +1,75 @@
+Variables: 
+
+          * JavaScript variables are containers for "storing data" values.
+          * In this example, x, y, and z, are variables.
+          * To create a variable in JavaScript, We can declare variables to store data by using the "var", "let", or "const" keywords.
+          * Before 2015, using the "var" keyword was the only way to declare a JavaScript variable.
+          
+1) "Var" keyword:         
+      Ex:
+          <script>
+          var x = 5;
+          var y = 6;
+          var z = x + y;
+          document.getElementById("demo").innerHTML ="The value of z is: " + z;
+          </script>
+          
+2015 version of Javascript:
+
+          * ES6 - ECMAScript allows the use of the "const" keyword to define a variable that cannot be reassigned.
+          * The "let" keyword to define a variable with restricted scope.
+          
+2) "Let" keyword:
+
+          let message;
+          message = 'Hello';
+         
+3) Re-Declaring JavaScript Variables:
+
+       Ex:
+          var carName = "Volvo";
+          var carName;
+         
+4) JavaScript Arithmetic:
+
+       Ex:
+          var x = 5 + 2 + 3;
+          
+ 5) Javascript string:
+ 
+      Ex:
+          var x = "John" + " " + "Doe";
+          
+ 6) JavaScript name begins with:
+ 
+          * A letter (A-Z or a-z)
+          * A dollar sign ($)
+          * A  underscore (_)
+          
+     Ex:1: Using dollar sign
+     
+           var $$$ = "Hello World";
+           var $ = 2;
+           var $myMoney = 5;
+           
+     Ex:2: Using underscore
+     
+           var _lastName = "Johnson";
+           var _x = 2;
+           var _100 = 5;
+           
+ 7) "Const" keyword: 
+ 
+      Ex:
+           const myBirthday = '18.04.1982';
+           
+ 8) Uppercase constant:
+ 
+      Ex:
+           const COLOR_RED = "#F00";
+           const COLOR_GREEN = "#0F0";
+           const COLOR_BLUE = "#00F";
+           const COLOR_ORANGE = "#FF7F00";
+           
+           
+          
