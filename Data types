@@ -19,9 +19,6 @@ Non-Primitive types:
    
 String:
 
-   1) By string literal
-   2) By string object (using new keyword)
-
 Ex:1: Using literals.
 
        <script>  
@@ -57,10 +54,6 @@ Boolean:
           </script> 
 
 Array:
-
-    1) By array literal
-    2) By creating instance of Array directly (using new keyword)
-    3) By using an Array constructor (using new keyword)
 
     Ex:1: Using literals
     
@@ -100,10 +93,6 @@ Array:
           </script>  
        
 Object:
-
-       1) By object literal
-       2) By creating instance of Object directly (using new keyword)
-       3) By using an object constructor (using new keyword)
  
     Ex:1: Using literals:
       
