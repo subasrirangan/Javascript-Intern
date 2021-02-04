@@ -113,10 +113,10 @@ String methods:
     Ex:
           var n=new Number(value);  
           
-          var x=102;//integer value  
-          var y=102.7;//floating point value  
-          var z=13e4;//exponent value, output: 130000  
-          var n=new Number(16);//integer value by number object
+          var x=102; 
+          var y=102.7;
+          var z=13e4;
+          var n=new Number(16);
           
 Number methods:
 
@@ -210,8 +210,8 @@ Boolean:
           Boolean b=new Boolean(value);  
           
           <script>  
-          document.write(10<20);//true  
-          document.write(10<5);//false  
+          document.write(10<20);  
+          document.write(10<5); 
           </script> 
 
 Array:
