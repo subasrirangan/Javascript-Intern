@@ -21,17 +21,11 @@ String:
 
 Ex:1: Using literals.
 
-       <script>  
-       var str="This is string literal";  
-       document.write(str);  
-       </script>  
+       var str="This is string literal";   
        
 Ex:2: Using objects.
-  
-       <script>  
+
        var stringname=new String("hello javascript string");  
-       document.write(stringname);  
-       </script> 
        
 Number:
  
@@ -47,11 +41,9 @@ Boolean:
     
     Boolean b=new Boolean(value);
     
-    Ex:       
-          <script>  
+    Ex:        
           document.write(10<20);  
           document.write(10<5); 
-          </script> 
 
 Array:
 
@@ -59,19 +51,16 @@ Array:
     
           var arrayname=[value1,value2.....valueN];  
           
-          <script>  
+          
           var emp=["Sonoo","Vimal","Ratan"];  
           for (i=0;i<emp.length;i++)
           {  
           document.write(emp[i] + "<br/>");  
           }  
-          </script>  
           
     Ex:2: Using New
     
           var arrayname=new Array();  
-          
-          <script>  
           var i;  
           var emp = new Array();  
           emp[0] = "Arun";  
@@ -80,17 +69,15 @@ Array:
           for (i=0;i<emp.length;i++)
           {  
           document.write(emp[i] + "<br>");  
-          }  
-          </script>  
+          }   
 
     Ex:3: Using Constructor
     
-          <script>  
+          
           var emp=new Array("Jai","Vijay","Smith");  
           for (i=0;i<emp.length;i++){  
           document.write(emp[i] + "<br>");  
           }  
-          </script>  
        
 Object:
  
@@ -98,26 +85,26 @@ Object:
       
           object={property1:value1,property2:value2.....propertyN:valueN}  
            
-          <script>  
+          
           emp={id:102,name:"Shyam Kumar",salary:40000}  
           document.write(emp.id+" "+emp.name+" "+emp.salary);  
-          </script>  
+           
       
   ` Ex:2: Using new
         
           var objectname=new Object();  
           
-          <script>  
+         
           var emp=new Object();  
           emp.id=101;  
           emp.name="Ravi Malik";  
           emp.salary=50000;  
           document.write(emp.id+" "+emp.name+" "+emp.salary);  
-          </script>  
+         
  
     Ex:3:Using Constructor
     
-          <script>  
+        
           function emp(id,name,salary)
           {  
           this.id=id;  
@@ -126,6 +113,6 @@ Object:
           }  
           e=new emp(103,"Vimal Jaiswal",30000);  
           document.write(e.id+" "+e.name+" "+e.salary);  
-          </script>  
+           
           
           
