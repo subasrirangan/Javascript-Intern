@@ -8,14 +8,11 @@ Primitive types:
    * string
    * number
    * boolean 
-   * undefined
-   * null
    
 Non-Primitive types:
 
    * Object 
    * Array
-   * RegExp
    
 String:
 
