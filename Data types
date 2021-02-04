@@ -1,0 +1,332 @@
+DATA TYPES:
+ 
+  1) Primitive data type.
+  2) Non-primitive data type.
+
+Primitive types:
+      
+   * string
+   * number
+   * boolean 
+   * undefined
+   * null
+   
+Non-Primitive types:
+
+   * Object 
+   * Array
+   * RegExp
+   
+String:
+
+   1) By string literal
+   2) By string object (using new keyword)
+
+Ex:1: Using literals.
+
+       <script>  
+       var str="This is string literal";  
+       document.write(str);  
+       </script>  
+       
+Ex:2: Using objects.
+  
+       <script>  
+       var stringname=new String("hello javascript string");  
+       document.write(stringname);  
+       </script> 
+       
+String methods:
+
+1) CharAt(index)
+     Ex: 
+         <script>  
+         var str="javascript";  
+         document.write(str.charAt(2));  
+         </script>  
+         
+2) Concat(str)         
+     Ex: 
+          <script>  
+          var s1="javascript ";  
+          var s2="concat example";  
+          var s3=s1.concat(s2);  
+          document.write(s3);  
+          </script>  
+          
+3) indexOf(str)
+     Ex:
+          <script>  
+          var s1="javascript from javatpoint indexof";  
+          var n=s1.indexOf("from");  
+          document.write(n);  
+          </script>  
+          
+4) lastIndexOf(str)      
+     Ex:
+          <script>  
+          var s1="javascript from javatpoint indexof";  
+          var n=s1.lastIndexOf("java");  
+          document.write(n);  
+          </script> 
+          
+5) toLowerCase()  
+     Ex:
+          <script>  
+          var s1="JavaScript toLowerCase Example";  
+          var s2=s1.toLowerCase();  
+          document.write(s2);  
+          </script> 
+          
+6) toUpperCase()           
+     Ex:  
+          <script>  
+          var s1="JavaScript toUpperCase Example";  
+          var s2=s1.toUpperCase();  
+          document.write(s2);  
+          </script>  
+  
+7) slice(beginIndex, endIndex)
+    Ex:
+          <script>  
+          var s1="abcdefgh";  
+          var s2=s1.slice(2,5);  
+          document.write(s2);  
+          </script>  
+          
+8) String trim() 
+    Ex:
+          <script>  
+          var s1="     javascript trim    ";  
+          var s2=s1.trim();  
+          document.write(s2);  
+          </script>  
+          
+9) split()
+    Ex: 
+          <script>  
+          var str="This is JavaTpoint website";  
+          document.write(str.split(" "));   
+          </script>  
+ Number:
+ 
+    Ex:
+          var n=new Number(value);  
+          
+          var x=102;//integer value  
+          var y=102.7;//floating point value  
+          var z=13e4;//exponent value, output: 130000  
+          var n=new Number(16);//integer value by number object
+          
+Number methods:
+
+1) isFinite()
+    Ex: 
+          <script>  
+          var x=0;  
+          var y=1;  
+          var z=-1;  
+          document.writeln(Number.isFinite(x));  
+          document.writeln(Number.isFinite(y));  
+          document.writeln(Number.isFinite(z));   
+          </script>  
+
+2) isInteger()
+    Ex:
+          <script>  
+          var x=0;  
+          var y=1;  
+          var z=-1;  
+          document.writeln(Number.isInteger(x));  
+          document.writeln(Number.isInteger(y));  
+          document.writeln(Number.isInteger(z));  
+          </script> 
+          
+3)  parseFloat()  
+     Ex:
+          <script>  
+          var a="50";  
+          var b="50.25"  
+          var c="String";  
+          var d="50String";  
+          var e="50.25String"  
+          document.writeln(Number.parseFloat(a)+"<br>");  
+          document.writeln(Number.parseFloat(b)+"<br>");  
+          document.writeln(Number.parseFloat(c)+"<br>");  
+          document.writeln(Number.parseFloat(d)+"<br>");  
+          document.writeln(Number.parseFloat(e));   
+          </script> 
+          
+4) parseInt()          
+    Ex:
+          <script>  
+          var a="50";  
+          var b="50.25"  
+          var c="String";  
+          var d="50String";  
+          var e="50.25String"  
+          document.writeln(Number.parseInt(a)+"<br>");  
+          document.writeln(Number.parseInt(b)+"<br>");  
+          document.writeln(Number.parseInt(c)+"<br>");  
+          document.writeln(Number.parseInt(d)+"<br>");  
+          document.writeln(Number.parseInt(e));   
+          </script>  
+ 
+5) toExponential()
+    Ex:
+          <script>  
+          var a=989721;  
+          document.writeln(a.toExponential());  
+          </script>  
+          
+6) toFixed()
+    Ex:
+          <script>  
+          var a=98.9721;  
+          document.writeln(a.toFixed());  
+          </script>  
+          
+7) toPrecision()           
+     Ex:
+          <script>  
+          var a=98.9721;  
+          document.writeln(a.toPrecision());  
+          </script>  
+ 
+8) toString()
+    Ex: 
+          <script>  
+          var a=50;  
+          var b=-50;  
+          var c=50.25;  
+          document.writeln(a.toString()+"<br>");  
+          document.writeln(b.toString()+"<br>");  
+          document.writeln(c.toString());  
+          </script>  
+          
+Boolean:
+
+    Ex: 
+          Boolean b=new Boolean(value);  
+          
+          <script>  
+          document.write(10<20);//true  
+          document.write(10<5);//false  
+          </script> 
+
+Array:
+
+    1) By array literal
+    2) By creating instance of Array directly (using new keyword)
+    3) By using an Array constructor (using new keyword)
+
+    Ex:1: Using literals
+    
+          var arrayname=[value1,value2.....valueN];  
+          
+          <script>  
+          var emp=["Sonoo","Vimal","Ratan"];  
+          for (i=0;i<emp.length;i++)
+          {  
+          document.write(emp[i] + "<br/>");  
+          }  
+          </script>  
+          
+    Ex:2: Using New
+    
+          var arrayname=new Array();  
+          
+          <script>  
+          var i;  
+          var emp = new Array();  
+          emp[0] = "Arun";  
+          emp[1] = "Varun";  
+          emp[2] = "John";  
+          for (i=0;i<emp.length;i++)
+          {  
+          document.write(emp[i] + "<br>");  
+          }  
+          </script>  
+
+    Ex:3: Using Constructor
+    
+          <script>  
+          var emp=new Array("Jai","Vijay","Smith");  
+          for (i=0;i<emp.length;i++){  
+          document.write(emp[i] + "<br>");  
+          }  
+          </script>  
+       
+ Array methods:
+ 
+ 1) isArray()
+     Ex: 
+          <script>  
+          document.write(Array.isArray(1,2,3,4)); 
+          </script>  
+ 
+2) concat() 
+    Ex: 
+          <script>  
+          var arr1=["C","C++","Python"];  
+          var arr2=["Java","JavaScript","Android"];  
+          var result=arr1.concat(arr2);  
+          document.writeln(result);  
+          </script>  
+ 
+3) toString()
+    Ex: 
+          <script>  
+          var season=["Spring","Autumn","Summer","Winter"];  
+          var str=season.toString();  
+          document.write("After converting into string:  "+str);  
+          </script> 
+          
+4) copyWithin()
+    Ex: 
+          <script>  
+          var arr=["AngularJS","Node.js","JQuery","Bootstrap"]  
+          var result=arr.copyWithin(0,1,2);  
+          document.writeln(result);  
+          </script>  
+Object:
+
+       1) By object literal
+       2) By creating instance of Object directly (using new keyword)
+       3) By using an object constructor (using new keyword)
+ 
+    Ex:1: Using literals:
+      
+          object={property1:value1,property2:value2.....propertyN:valueN}  
+           
+          <script>  
+          emp={id:102,name:"Shyam Kumar",salary:40000}  
+          document.write(emp.id+" "+emp.name+" "+emp.salary);  
+          </script>  
+      
+  ` Ex:2: Using new
+        
+          var objectname=new Object();  
+          
+          <script>  
+          var emp=new Object();  
+          emp.id=101;  
+          emp.name="Ravi Malik";  
+          emp.salary=50000;  
+          document.write(emp.id+" "+emp.name+" "+emp.salary);  
+          </script>  
+ 
+    Ex:3:Using Constructor
+    
+          <script>  
+          function emp(id,name,salary)
+          {  
+          this.id=id;  
+          this.name=name;  
+          this.salary=salary;  
+          }  
+          e=new emp(103,"Vimal Jaiswal",30000);  
+          document.write(e.id+" "+e.name+" "+e.salary);  
+          </script>  
+          
+          
