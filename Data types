@@ -342,3 +342,183 @@ Object:
           e=new emp(103,"Vimal Jaiswal",30000);  
           document.write(e.id+" "+e.name+" "+e.salary);  
            
+Object methods:
+
+1) Object.assign()
+Ex:
+     const object1 = {  
+       a: 11,  
+       b: 12,  
+       c: 33  
+     };  
+     const object2 = Object.assign({c: 4, d: 5}, object1);  
+     console.log(object2.c, object2.d);   
+
+2) Object.create()
+Ex:
+     Object.create(prototype[, propertiesObject])  
+
+     const people = {  
+       printIntroduction: function ()  
+        {  
+         console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);  
+       }  
+     };  
+     const me = Object.create(people);  
+     me.name = "Marry";  
+     me.isHuman = true;  
+     me.printIntroduction();
+
+3) Object.defineProperties()
+Ex:
+     Object.defineProperties(obj, props)  
+
+     const object1 = {};  
+     Object.defineProperties(object1, {  
+       property1:{  
+     value: 44, }  
+      });  
+     console.log(object1.property1);  
+
+4) Object.defineProperty()
+Ex:
+     Object.defineProperty(obj, prop, descriptor)  
+
+     const object1 = {};  
+     Object.defineProperty(object1, 'property1', {  
+       value: 22, } );  
+       object1.property1;  
+     console.log(object1.property1); 
+     
+5) Object.entries()
+Ex:
+     Object.entries(obj)  
+
+     const obj = { 10: 'arry', 21: 'barry', 23: 'carry' };  
+     console.log(Object.entries(obj)[2]);  
+
+6) Object.freeze()
+Ex:
+     Object.freeze(obj) 
+
+     const object1 = {  
+       property1: 22  
+     };  
+     const object2 = Object.freeze(object1);  
+     object2.property1 = 33;  
+     console.log(object2.property1);  
+     
+7) Object.getOwnPropertyDescriptor()
+Ex:
+     Object.getOwnPropertyDescriptor(obj, prop) 
+
+     const object1 = {  
+       property1: 42  
+     }  
+     const descriptor1 = Object.getOwnPropertyDescriptor(object1, 'property1');  
+     console.log(descriptor1.configurable);  
+     console.log(descriptor1.enumerable);  
+     console.log(descriptor1.value);  
+
+8) Object.getOwnPropertyDescriptors()
+Ex:
+     Object.getOwnPropertyDescriptors(obj)
+
+     const object1 = {  
+       property1: 103  
+     };  
+
+     const descriptors1 = Object.getOwnPropertyDescriptors(object1);  
+     console.log(descriptors1.property1.writable);  
+     console.log(descriptors1.property1.value);  
+     
+9) Object.getOwnPropertyNames()
+Ex:
+     Object.getOwnPropertyNames(obj)  
+
+     const object1 = {  
+       a: 0,  
+       b: 1,  
+       c: 2,  
+     };  
+     console.log(Object.getOwnPropertyNames(object1));  
+     
+10) Object.getOwnPropertySymbols()
+Ex:
+     Object.getOwnPropertySymbols(obj)  
+
+     const object1 = {};  
+      a = Symbol('a');  
+      b = Symbol.for('b');  
+     const objectSymbols = Object.getOwnPropertySymbols(object1);  
+     console.log(objectSymbols.length); 
+     
+11) Object.getPrototypeOf()
+Ex:
+     Object.getPrototypeOf(obj)  
+
+     const prototype1 = {};  
+     const object1 = Object.create(prototype1);  
+     const prototype2 = {};  
+     const object2 = Object.create(prototype2);  
+     console.log(Object.getPrototypeOf(object1) === prototype1);  
+     console.log(Object.getPrototypeOf(object1) === prototype2);
+     
+12) Object.is()
+Ex:
+     Object.is(value1, value2);  
+
+     const object1 = {};  
+     console.log(Object.is(object1));  
+     
+13) Object.preventExtensions()
+Ex:
+     Object.preventExtensions(obj)  
+
+     const uu = {};  
+     Object.preventExtensions(uu);  
+     console.log(  
+         Object.isExtensible(uu)  
+     );   
+
+14) Object.seal()
+Ex:
+     Object.seal(obj)  
+
+     const obj1 = { property1: 'Marry'};  
+     const obj2 = Object.seal(obj1);    
+     obj2.property1 = 'carry';  
+     console.log(obj2.property1);  
+
+15) Object.setPrototypeOf()
+Ex:
+     Object.setPrototypeOf(obj, prototype)  
+
+      var Animal = {  
+        speak() {  
+          console.log(this.name + ' makes');  
+        }  
+     };  
+  
+     class Dog {  
+        constructor(name) {  
+        this.name = name;  
+       }  
+     }  
+
+     Object.setPrototypeOf(Dog.prototype, Animal);     
+     var d = new Dog('people');  
+     d.speak();  
+     
+16) Object.values()
+Ex:
+     Object.values(obj)  
+
+     const object1 = {  
+       a: 'Rahul',  
+       b: 0,  
+       c:false  
+     };  
+     console.log(Object.values(object1));       
+     
+     
