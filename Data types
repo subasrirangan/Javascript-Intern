@@ -203,7 +203,7 @@ Ex:
 Ex:
      var arr=['John','Michael','Embrose','Herry','Lewis'];  
      var itr=arr.entries();  
-     for(var e of itr) //for loop using var.  
+     for(var e of itr)  
     {  
         document.write(e+"</br>");  
     }  
