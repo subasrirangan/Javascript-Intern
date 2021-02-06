@@ -490,27 +490,8 @@ Ex:
      obj2.property1 = 'carry';  
      console.log(obj2.property1);  
 
-15) Object.setPrototypeOf()
-Ex:
-     Object.setPrototypeOf(obj, prototype)  
-
-      var Animal = {  
-        speak() {  
-          console.log(this.name + ' makes');  
-        }  
-     };  
-  
-     class Dog {  
-        constructor(name) {  
-        this.name = name;  
-       }  
-     }  
-
-     Object.setPrototypeOf(Dog.prototype, Animal);     
-     var d = new Dog('people');  
-     d.speak();  
      
-16) Object.values()
+15) Object.values()
 Ex:
      Object.values(obj)  
 
