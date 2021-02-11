@@ -1,0 +1,56 @@
+Hoisting: Move to the top before declaration.
+
+Ex:1: Hoisting of variables
+
+x=1;
+
+alert('x= ' + x );      // x=1
+
+var x;
+
+Ex:2: Hoisting 
+
+x=1;
+y=x;
+
+alert('x = ' + x );     // x=1
+alert('y = ' + y );     // y=1
+
+var x;
+var y;
+
+Ex:3: Hoisting not supports for initialized variables
+
+alert( 'x= ' + x);      // x= undefined
+
+var x=1;
+
+Ex:4: Hoisting of functions
+
+alert(Sum(5,5));      // 10
+
+function Sum(val1,val2)
+{
+return val1+val2;
+}
+
+Ex:5: Hoisting on function expression
+
+Add(5,5);         // error
+
+var Add = function sum(val1,val2)
+{
+ return val1+val2;
+ }
+ 
+ Ex:6:Function Hoisting Before Variables
+ 
+ alert(UseMe)
+ 
+ var UseMe;
+ 
+ function UseMe()                          // function UseMe()
+ {                                         // {
+ alert("UseMe function called");           // UseMe function called
+ }                                         // }
+ 
