@@ -1,0 +1,30 @@
+Truthy :
+
+Ex:
+
+1) if (true)
+2) if ({})
+3) if ([])
+4) if (42)
+5) if ("0")
+6) if ("false")
+7) if (new Date())
+8) if (-42)
+9) if (12n)
+10) if (3.14)
+11) if (-3.14)
+12) if (Infinity)
+13) if (-Infinity)
+
+Falsy : 
+
+Ex:
+
+1) if (false)
+2) if (null)
+3) if (undefined)
+4) if (0)
+5) if (-0)
+6) if (0n)
+7) if (NaN)
+8) if ("")
