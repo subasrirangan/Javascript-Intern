@@ -157,18 +157,18 @@ Ex:
 
 var colors = ['red', 'green', 'yellow'];
 
-for(var key in colors)
+for(var index in colors)
 {
-console.log(colors[key]);
+console.log(colors[index]);
 }
 
 8) for...of statement
 
 Ex:
 
-var array1 = ['a', 'b', 'c'];
+var colors = ['red', 'green', 'yellow'];
 
-for (var element of array1) 
+for(var key in colors)
 {
-  console.log(element);
+console.log(colors);
 }
