@@ -168,7 +168,7 @@ Ex:
 
 var colors = ['red', 'green', 'yellow'];
 
-for(var key in colors)
+for(var key of colors)
 {
 console.log(colors);
 }
